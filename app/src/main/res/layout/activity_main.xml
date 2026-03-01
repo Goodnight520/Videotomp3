@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="请先选择视频文件"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择视频文件"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnToM4a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提取为 M4A (无损)"
+        android:enabled="false"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnToMp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提取为 MP3 (兼容)"
+        android:enabled="false"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnOpenFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看提取出的音频"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="支持格式：所有视频格式 ➔ MP3 / M4A 音频提取"
+        android:textColor="#777777"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/authorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+</LinearLayout>
+
